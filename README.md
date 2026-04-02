@@ -11,17 +11,20 @@ The number of snapshots taken per second comes out to be 44100, which would be t
 
 FFT (Fast Fourier Transformation) basically says that any wave can be broken down into a sum of sine waves, of different frequency and amplitudes. So, it fundamentally tells about how much of each frequency is present in that wave.
 
-![Stage 1 - Time Domain](plots/Figure_1.png)
+
 
 ### Time Domain
 Examining this graph, we can conclude that this isn't a normal audio of a human speech — the amplitude is consistently high throughout the entire 2.28 seconds, constantly hitting near maximum values with almost no quiet sections, which is not how normal speech looks.
 
-![Stage 1 - FFT](plots/Figure_2.png)
+![Stage 1 - Time Domain](plots/Figure_1.png)
+
 
 ### FFT
 This was the FFT graph obtained, which looks very distinct from a normal FFT graph of speech (ranging from 0–4000 Hz), it almost has no broad energy. Also, sharp narrow spikes are no element of human speech — these are just pure sine waves.
 
+![Stage 1 - FFT](plots/Figure_2.png)
 ![Stage 1 - FFT_speech](plots/aQKy0.png)
+This is how a general FFT graph looks like for speech.
 
 ---
 
