@@ -24,6 +24,7 @@ This was the FFT graph obtained, which looks very distinct from a normal FFT gra
 
 ![Stage 1 - FFT](plots/Figure_2.png)
 ![Stage 1 - FFT_speech](plots/aQKy0.png)
+
 This is how a general FFT graph looks like for speech.
 
 ---
@@ -39,6 +40,8 @@ Now since we know the fc, what we can do is multiply our given audio by a sine w
 ![Stage 2 - FFT after demodulation](plots/Figure_3.png)
 
 ![Stage 2 - FFT zoomed](plots/Figure_4.png)
+
+Zoomed in Version.
 
 ---
 
