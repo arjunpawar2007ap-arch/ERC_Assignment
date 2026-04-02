@@ -11,15 +11,17 @@ The number of snapshots taken per second comes out to be 44100, which would be t
 
 FFT (Fast Fourier Transformation) basically says that any wave can be broken down into a sum of sine waves, of different frequency and amplitudes. So, it fundamentally tells about how much of each frequency is present in that wave.
 
+![Stage 1 - Time Domain](plots/Figure_1.png)
+
 ### Time Domain
 Examining this graph, we can conclude that this isn't a normal audio of a human speech — the amplitude is consistently high throughout the entire 2.28 seconds, constantly hitting near maximum values with almost no quiet sections, which is not how normal speech looks.
 
-![Stage 1 - Time Domain](plots/stage1_time_domain.png)
+![Stage 1 - FFT](plots/Figure_2.png)
 
 ### FFT
 This was the FFT graph obtained, which looks very distinct from a normal FFT graph of speech (ranging from 0–4000 Hz), it almost has no broad energy. Also, sharp narrow spikes are no element of human speech — these are just pure sine waves.
 
-![Stage 1 - FFT](plots/stage1_fft.png)
+![Stage 1 - FFT_speech](plots/aQKy0.png)
 
 ---
 
@@ -31,9 +33,9 @@ Now since we know the fc, what we can do is multiply our given audio by a sine w
 
 **How does a low pass filter work, and why do we need it?** After multiplying the sine waves, the two frequencies will produce two outputs — one will be A - B and the other A + B. While we don't require A + B, it is just a garbage frequency for us. In that case we need something to filter out the higher garbage frequencies and retrieve only the lower frequencies, which is accurately done by a low pass filter.
 
-![Stage 2 - FFT after demodulation](plots/stage2_fft.png)
+![Stage 2 - FFT after demodulation](plots/Figure_3.png)
 
-![Stage 2 - FFT zoomed](plots/stage2_fft_zoomed.png)
+![Stage 2 - FFT zoomed](plots/Figure_4.png)
 
 ---
 
@@ -49,7 +51,7 @@ The cutoff frequency for the high pass filter was initially too low, so it was c
 
 Now this surely looks like a FFT graph of speech.
 
-![Stage 3 - FFT after notch filtering](plots/stage3_fft.png)
+![Stage 3 - FFT after notch filtering](plots/Figure_6.png)
 
 ---
 
