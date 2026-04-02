@@ -14,13 +14,13 @@ FFT (Fast Fourier Transformation) basically says that any wave can be broken dow
 
 
 ### Time Domain
-Examining this graph, we can conclude that this isn't a normal audio of a human speech — the amplitude is consistently high throughout the entire 2.28 seconds, constantly hitting near maximum values with almost no quiet sections, which is not how normal speech looks.
+Examining this graph, we can conclude that this isn't a normal audio of a human speech the amplitude is consistently high throughout the entire 2.28 seconds, constantly hitting near maximum values with almost no quiet sections, which is not how normal speech looks.
 
 ![Stage 1 - Time Domain](plots/Figure_1.png)
 
 
 ### FFT
-This was the FFT graph obtained, which looks very distinct from a normal FFT graph of speech (ranging from 0–4000 Hz), it almost has no broad energy. Also, sharp narrow spikes are no element of human speech — these are just pure sine waves.
+This was the FFT graph obtained, which looks very distinct from a normal FFT graph of speech (ranging from 0–4000 Hz), it almost has no broad energy. Also, sharp narrow spikes are no element of human speech these are just pure sine waves.
 
 ![Stage 1 - FFT](plots/Figure_2.png)
 ![Stage 1 - FFT_speech](plots/aQKy0.png)
@@ -35,7 +35,7 @@ Our FFT graph shows two big spikes, one at approximately 7300.1953 Hz and the ot
 
 Now since we know the fc, what we can do is multiply our given audio by a sine wave of frequency fc again (because multiplying just shifts the graph, and multiplying twice gets back the same original one), and then apply a low pass filter to allow audio below 4000 Hz only.
 
-**How does a low pass filter work, and why do we need it?** After multiplying the sine waves, the two frequencies will produce two outputs — one will be A - B and the other A + B. While we don't require A + B, it is just a garbage frequency for us. In that case we need something to filter out the higher garbage frequencies and retrieve only the lower frequencies, which is accurately done by a low pass filter.
+**How does a low pass filter work, and why do we need it?** After multiplying the sine waves, the two frequencies will produce two outputs one will be A - B and the other A + B. While we don't require A + B, it is just a garbage frequency for us. In that case we need something to filter out the higher garbage frequencies and retrieve only the lower frequencies, which is accurately done by a low pass filter.
 
 ![Stage 2 - FFT after demodulation](plots/Figure_3.png)
 
@@ -63,6 +63,6 @@ Now this surely looks like a FFT graph of speech.
 
 ## Stage 4 — Phase Investigation
 
-Although the README says this may seem to be what we actually needed, the audio might still not be comprehensible. One thing which can be done that still won't change the FFT graph but will surely mess with the audio is reversing the audio — since FFT just measures the amount of each frequency present in the wave, it doesn't matter if we input the audio wave as reversed, the FFT will still be the same.
+Although the README says this may seem to be what we actually needed, the audio might still not be comprehensible. One thing which can be done that still won't change the FFT graph but will surely mess with the audio is reversing the audio since FFT just measures the amount of each frequency present in the wave, it doesn't matter if we input the audio wave as reversed, the FFT will still be the same.
 
 I did try reversing it, but that didn't sound anything logical. The non-reversed cleaned signal produced clear, intelligible audio containing the recovered sound. The reversal may have been corrected in the demodulation phase, so I concluded my search with the recovered audio itself.
