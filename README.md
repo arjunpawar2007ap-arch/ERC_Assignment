@@ -1,4 +1,4 @@
-# Assignments
+# Assignment
 
 ## ERC Motivation Video
 
