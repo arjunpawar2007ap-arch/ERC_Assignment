@@ -4,7 +4,7 @@
 
 Click the link below to watch my motivation video for joining the Electronics and Robotics Club:
 
-[Watch Video](https://your-google-drive-link-here)
+[Watch Video](https://drive.google.com/file/d/18Huyg_52Qdqx4XvZxogBho6hjcc-qn9A/view?usp=share_link)
 
 ---
 
