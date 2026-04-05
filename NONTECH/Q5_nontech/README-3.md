@@ -1,4 +1,6 @@
-# How your Finger Unlocks your Phone? 🔐
+# How your Finger Unlocks your Phone? 
+
+![general meme](images/image-3.png)
 
 A silent conversation between skin and silicon, where a single touch whispers your identity to the machine.
 
@@ -13,6 +15,8 @@ Imagine your fingertip is a mountain range:
 - 🥾 The **capacitative sensors** are the hikers on the mountain, in direct contact with the ground
 - 🦇 The **ultrasonic sensors** are like bats, mapping all these mountains using echolocation
 
+![echolocation meme](images/tempImageOKadvk.jpg)
+
 ## The Three Sensor Types
 
 ### Optical Sensors
@@ -20,6 +24,8 @@ When you place your fingertip on the screen, that particular area is illuminated
 
 ### Capacitative Sensors
 These consist of arrays of capacitative circuits. When you touch your fingertip, the high ridges interact with these circuits and change the electrical charge at specifically those points, while the sections lying in the valley of these ridges do not interact at all, thus creating a very unique pattern. Given that these depend heavily on physical touch, any kind of moisture or wet hands can cause shorting in the circuits, creating an extremely different pattern.
+
+![wet hands meme](images/image-4.png)
 
 ### Ultrasonic Sensors
 The easiest to understand — the phone shoots up ultrasonic waves when you touch with your fingertips, and the difference between the bouncing back of those waves as they hit the ridges and valleys is what creates the unique pattern for your fingertip.
