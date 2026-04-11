@@ -61,7 +61,7 @@ Now this surely looks like a FFT graph of speech.
 
 ---
 
-## Stage 4 — Phase Investigation
+## Stage 4 — Time Reversal Investigation
 
 Although the README says this may seem to be what we actually needed, the audio might still not be comprehensible. One thing which can be done that still won't change the FFT graph but will surely mess with the audio is reversing the audio since FFT just measures the amount of each frequency present in the wave, it doesn't matter if we input the audio wave as reversed, the FFT will still be the same.
 
